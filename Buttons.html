@@ -8,6 +8,7 @@
     border-radius: 2px;
     cursor: pointer;
     margin-right: 8px;
+    transition: opacity 0,15s;
     }
     .subscribe-button:hover {
       background-color: green;
@@ -18,10 +19,11 @@
     background-color: blue;  
     }
     
+
     .join-button {
       background-color: white;
-      border-color: rgb(25, 105, 225);
-      color: rgb(25, 105, 225);
+      border-color: rgb(41, 118, 211);
+      color: rgb(41, 118, 211);
     
       border-style: solid;
       border-width: 1px;
@@ -30,10 +32,16 @@
       border-radius: 2px;
       cursor: pointer;
       margin-right: 8px;
+      transition: background-color 0.15s, color 0.15s;
     }
 
     .join-button:hover {
-      background-color: yellow;
+      background-color: rgb(41, 118, 211);
+      color:white ;
+    }
+
+    .join-button:active {
+      opacity:0.7;
     }
 
 
@@ -44,12 +52,36 @@
       color: white;
       border: none;
       height: 36px;
-      width: 74px;
+      width: 100px;
       border-radius: 18px;
       font-weight: bold;
-      font-size: 15px;
+      font-size: 17px;
       cursor: pointer;
+      transition: box-shadow 0.15s;
+      
+      
+    }
 
+    .tweet-button:hover {
+      
+      box-shadow: 2px 5px 10px  rgba(0, 0, 0, 0.15);
+    }
+    
+    
+
+
+    .facebook-button {
+      background-color: rgb(7, 106, 172);
+      color: white;
+      border: none;
+      font-weight: bold;
+      width: 120px;
+      height:40px;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor:pointer;
+
+      margin-left: 0.8px;
     }
 </style>
 
@@ -58,5 +90,8 @@
 
 <button class="join-button "> JOIN </button>
 
-<button class="tweet-button"> TWEET</button>
+<button class="tweet-button"> Tweet</button>
+<button class="facebook-button"> Facebook</button>
+
+
 
